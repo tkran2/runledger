@@ -1,0 +1,28 @@
+{
+  "sha256": {
+    ".github/workflows/ci.yml": "70490a60900eeb37c227bed5be4e5a1eb6e786fca3ed447cfa8498765265a0b3",
+    ".gitignore": "62e5cc43e82fa1ca2b8b5d56744f9b46bff2374ee1197002e38cd2aa74751acc",
+    "LICENSE": "954dbef6e26df213addf5b8b37a7483b0a9bfde7794e7509f54b7d3be8055d73",
+    "Makefile": "9df8c13af0a549bad270eb1178dc8ced2ad3f21b3dec63791454f614ffc6155f",
+    "PROVENANCE.md": "99f22cf194ff87ee142de6836d99bb6658f903df980dff1507f3685498803aa3",
+    "README.md": "14ce4bc7d3aa4928dfb212c4b146a375d289a10bbd2ed00f471350029bdbb535",
+    "examples/baseline.json": "1a7dc55d78de3f7846459b02e9c41bd276cbf45ad5035eff5a37da81011276fe",
+    "examples/regressed.json": "35e33fa0b35230bd72ef3a016b18137ef40c788cdf1398306b352130a7048c2e",
+    "reports/VALIDATION.md": "60da428d33180b6d75637778b78f15bb1db443cfec4e0cce33a1d24261bec2b2",
+    "reports/recovery-20261008/recovery.sqlite": "95ec49e21bc6e9305c737bef14c88400b2f71804fe678d4d1e20ba1fa60b5b0c",
+    "reports/recovery-20261008/report.json": "befb509c2684795451f4164dcf3d1769f91687f3130c97a9c2a70649ef3b4400",
+    "reports/validation-tests.log": "f1c32380256eda8abe4e87d42d294670c9a2975a144e98fe7b987a10c880720c",
+    "reports/validation.json": "d691fca5eec39746f78df5e0cf38a5839f4b1334d632b969db90109ad871eb16",
+    "runledger/__init__.py": "6c2203974b2ed76f8e9eb71a3f17511c81d83124f41b873bedf53134905cd867",
+    "runledger/__main__.py": "b444124c94325172d26b3cc5abc55e9461b4a2ed79cf9ae62ba7cf739237b45f",
+    "runledger/db.py": "dbe3e9dec73893f1b062ce0c8b6290727d757e769dbd2aa3038262440c47eb63",
+    "runledger/evaluation.py": "3db73a4cbf3d8dc7edce8135cb7e1b6b9811780847a0ad68d6d2a26269fd94ce",
+    "runledger/web.py": "76e9fa60ea8919fe2688a6d846d93340fd2eb6db474a39ac19db1ecdc1b0f295",
+    "runledger/worker.py": "44ae95fb6ae0aa7577dbab93cda17aae9a0ffada1f133b77c093efd0e6308019",
+    "static/index.html": "b7515ef02d974db2cd399109cd13c7d2a99165ae7acd3a6e408c5f59dac812d1",
+    "tests/test_runledger.py": "b7d6ddf69513464413c4753778b26d2ee193c1b899b8ef111738ef247d1eee02",
+    "tools/recovery_demo.py": "c0094d27f06ee91ddacba76f563f9c16321fa63ded5ae78cee1e69b63ecd6785",
+    "tools/ui_smoke.cjs": "13d477982e9fc55dc84a743d8ea0d8f968ee05c6e29b390bcc968afde58b26de"
+  },
+  "scope": "packaged sources, public data and recorded results; generated binaries/caches excluded"
+}

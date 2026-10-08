@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-08",
+  "unit_and_integration_tests_passed": 15,
+  "http_api": "passed in integration tests",
+  "browser_javascript_syntax": "passed using node --check",
+  "browser_end_to_end": "not run; Chromium could not be downloaded in this environment",
+  "local_crash_recovery": {
+    "workers": 4,
+    "jobs": 40,
+    "attempts": 41,
+    "committed_results": 40,
+    "expired_leases": 1
+  },
+  "ci": "definition supplied, not executed on GitHub"
+}

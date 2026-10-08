@@ -1,0 +1,23 @@
+python3 -m unittest discover -s tests -v
+test_atomic_claim_has_one_owner (test_runledger.DatabaseTests.test_atomic_claim_has_one_owner) ... ok
+test_expired_worker_cannot_complete_heartbeat_or_fail (test_runledger.DatabaseTests.test_expired_worker_cannot_complete_heartbeat_or_fail) ... ok
+test_expiry_on_last_attempt_becomes_dead (test_runledger.DatabaseTests.test_expiry_on_last_attempt_becomes_dead) ... ok
+test_heartbeat_extends_only_current_attempt (test_runledger.DatabaseTests.test_heartbeat_extends_only_current_attempt) ... ok
+test_idempotent_concurrent_submission_and_conflict (test_runledger.DatabaseTests.test_idempotent_concurrent_submission_and_conflict) ... ok
+test_nonfinite_result_rolls_back_without_state_change (test_runledger.DatabaseTests.test_nonfinite_result_rolls_back_without_state_change) ... ok
+test_reopen_preserves_committed_result_and_audit (test_runledger.DatabaseTests.test_reopen_preserves_committed_result_and_audit) ... ok
+test_retry_budget_dead_letter_and_deterministic_backoff (test_runledger.DatabaseTests.test_retry_budget_dead_letter_and_deterministic_backoff) ... ok
+test_hand_calculated_metrics (test_runledger.EvaluationTests.test_hand_calculated_metrics) ... ok
+test_reference_order_does_not_change_benchmark (test_runledger.EvaluationTests.test_reference_order_does_not_change_benchmark) ... ok
+test_regression_guard_same_benchmark_not_changed_reference (test_runledger.EvaluationTests.test_regression_guard_same_benchmark_not_changed_reference) ... ok
+test_schema_bounds_and_nonfinite_inputs (test_runledger.EvaluationTests.test_schema_bounds_and_nonfinite_inputs) ... ok
+test_actual_process_crash_recovery (test_runledger.IntegrationTests.test_actual_process_crash_recovery) ... ok
+test_heartbeat_during_work (test_runledger.IntegrationTests.test_heartbeat_during_work) ... {"job": "ce665df8395946d195b7ae37f37d4ce2", "attempt": 1, "committed": true}
+ok
+test_http_idempotency_conflict_oversize_origin_and_result (test_runledger.IntegrationTests.test_http_idempotency_conflict_oversize_origin_and_result) ... {"job": "86051efb72934e9b9774f7a3a92c803d", "attempt": 1, "committed": true}
+ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.071s
+
+OK

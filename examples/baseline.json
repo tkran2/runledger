@@ -1,0 +1,76 @@
+{
+  "type": "retrieval_evaluation",
+  "name": "Baseline example",
+  "provenance": "demo",
+  "suite": "hand-authored-four-question-v1",
+  "corpus_ids": [
+    "validation",
+    "transactions",
+    "retry",
+    "leases",
+    "overview"
+  ],
+  "queries": [
+    {
+      "id": "q1",
+      "question": "Which passage describes the import validation rules?",
+      "relevant_ids": [
+        "validation"
+      ],
+      "retrieved_ids": [
+        "validation",
+        "transactions",
+        "retry"
+      ],
+      "citations": [
+        "validation"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How does the job retry after a worker crash?",
+      "relevant_ids": [
+        "retry"
+      ],
+      "retrieved_ids": [
+        "retry",
+        "leases",
+        "transactions"
+      ],
+      "citations": [
+        "retry"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Which document explains atomic transaction commits?",
+      "relevant_ids": [
+        "transactions"
+      ],
+      "retrieved_ids": [
+        "validation",
+        "transactions",
+        "leases"
+      ],
+      "citations": [
+        "transactions"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What prevents an expired worker from overwriting a result?",
+      "relevant_ids": [
+        "leases"
+      ],
+      "retrieved_ids": [
+        "leases",
+        "retry",
+        "validation"
+      ],
+      "citations": [
+        "leases"
+      ]
+    }
+  ],
+  "work_ms": 300
+}

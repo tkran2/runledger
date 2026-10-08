@@ -1,0 +1,198 @@
+{
+  "scenario": "one os._exit(73) crash after claim, then four local worker processes",
+  "jobs": 40,
+  "workers": 4,
+  "work_ms_per_attempt": 50,
+  "crash_exit_code": 73,
+  "recovery_elapsed_seconds": 0.6522204509997209,
+  "metrics": {
+    "states": {
+      "succeeded": 40
+    },
+    "attempts": 41,
+    "committed_results": 40,
+    "lease_expirations": 1
+  },
+  "retry_attempts": [
+    {
+      "id": "29b242bf41b24d53b8b15d3184348ad2",
+      "idempotency_key": "load-0",
+      "payload_sha256": "cae2f87a35ae414f90cebe578e3b96bad443015575aa883ed02fc078349589d1",
+      "state": "succeeded",
+      "attempt": 2,
+      "max_attempts": 3,
+      "lease_owner": null,
+      "lease_until": null,
+      "next_run": 1791482601.7561693,
+      "created": 1791482601.2959554,
+      "updated": 1791482602.0063162,
+      "last_error": null,
+      "result": {
+        "benchmark_sha256": "c94f34a5cf665935fc76f822b0af11250a80c84746f10f0c3c9df7351924bda8",
+        "limits": [
+          "Recorded-output replay, not a live model benchmark.",
+          "Citation ID existence does not establish factual grounding or entailment.",
+          "Demo fixtures are illustrative, not evidence of real retrieval quality."
+        ],
+        "metrics": {
+          "citation_count": 4,
+          "hit_at_3": 1.0,
+          "invalid_citation_rate": 0.0,
+          "mean_observed_model_latency_ms": null,
+          "mrr": 0.875,
+          "recall_at_3": 1.0
+        },
+        "name": "Replay 0",
+        "per_query": [
+          {
+            "hit_at_3": 1,
+            "id": "q1",
+            "invalid_citations": [],
+            "question": "Which passage describes the import validation rules?",
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 1.0,
+            "relevant_ids": [
+              "validation"
+            ],
+            "retrieved_ids": [
+              "validation",
+              "transactions",
+              "retry"
+            ],
+            "unknown_retrieved_ids": []
+          },
+          {
+            "hit_at_3": 1,
+            "id": "q2",
+            "invalid_citations": [],
+            "question": "How does the job retry after a worker crash?",
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 1.0,
+            "relevant_ids": [
+              "retry"
+            ],
+            "retrieved_ids": [
+              "retry",
+              "leases",
+              "transactions"
+            ],
+            "unknown_retrieved_ids": []
+          },
+          {
+            "hit_at_3": 1,
+            "id": "q3",
+            "invalid_citations": [],
+            "question": "Which document explains atomic transaction commits?",
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 0.5,
+            "relevant_ids": [
+              "transactions"
+            ],
+            "retrieved_ids": [
+              "validation",
+              "transactions",
+              "leases"
+            ],
+            "unknown_retrieved_ids": []
+          },
+          {
+            "hit_at_3": 1,
+            "id": "q4",
+            "invalid_citations": [],
+            "question": "What prevents an expired worker from overwriting a result?",
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 1.0,
+            "relevant_ids": [
+              "leases"
+            ],
+            "retrieved_ids": [
+              "leases",
+              "retry",
+              "validation"
+            ],
+            "unknown_retrieved_ids": []
+          }
+        ],
+        "provenance": "demo",
+        "query_count": 4,
+        "suite": "hand-authored-four-question-v1",
+        "worker_elapsed_ms": 53.95018000035634
+      },
+      "result_sha256": "6e5c5269140b66b4e44d7a3f23d88f7b28155fffc383de897359b556668865d4",
+      "attempts": [
+        {
+          "id": 1,
+          "job_id": "29b242bf41b24d53b8b15d3184348ad2",
+          "attempt": 1,
+          "owner": "worker-6-315455",
+          "started": 1791482601.3617518,
+          "finished": 1791482601.5134518,
+          "state": "lease_expired",
+          "error": "lease expired"
+        },
+        {
+          "id": 41,
+          "job_id": "29b242bf41b24d53b8b15d3184348ad2",
+          "attempt": 2,
+          "owner": "worker-9-755eb7",
+          "started": 1791482601.9514997,
+          "finished": 1791482602.0063162,
+          "state": "succeeded",
+          "error": null
+        }
+      ],
+      "events": [
+        {
+          "id": 1,
+          "job_id": "29b242bf41b24d53b8b15d3184348ad2",
+          "kind": "submitted",
+          "timestamp": 1791482601.2959554,
+          "detail": {}
+        },
+        {
+          "id": 41,
+          "job_id": "29b242bf41b24d53b8b15d3184348ad2",
+          "kind": "claimed",
+          "timestamp": 1791482601.3617518,
+          "detail": {
+            "attempt": 1,
+            "owner": "worker-6-315455"
+          }
+        },
+        {
+          "id": 48,
+          "job_id": "29b242bf41b24d53b8b15d3184348ad2",
+          "kind": "lease_expired",
+          "timestamp": 1791482601.5134518,
+          "detail": {
+            "attempt": 1,
+            "next_state": "retry_wait"
+          }
+        },
+        {
+          "id": 118,
+          "job_id": "29b242bf41b24d53b8b15d3184348ad2",
+          "kind": "claimed",
+          "timestamp": 1791482601.9514997,
+          "detail": {
+            "attempt": 2,
+            "owner": "worker-9-755eb7"
+          }
+        },
+        {
+          "id": 122,
+          "job_id": "29b242bf41b24d53b8b15d3184348ad2",
+          "kind": "completed",
+          "timestamp": 1791482602.0063162,
+          "detail": {
+            "attempt": 2
+          }
+        }
+      ]
+    }
+  ],
+  "python": "3.12.14",
+  "platform": "Linux",
+  "guarantee": "one committed result per job; task execution is at least once",
+  "scope": "single-host SQLite recovery demo, not a distributed load or model-quality benchmark"
+}
